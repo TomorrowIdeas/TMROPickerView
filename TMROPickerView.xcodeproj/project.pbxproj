@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		D63DB1F22374B7CF00A111FC /* TMROPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = D63DB1F02374B7CF00A111FC /* TMROPickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D63DB1F92374B90200A111FC /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63DB1F82374B90200A111FC /* PickerView.swift */; };
+		D63DB1FB2374B9B900A111FC /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63DB1FA2374B9B900A111FC /* Array+Extensions.swift */; };
+		D63DB1FD2374BBC200A111FC /* PickerComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63DB1FC2374BBC200A111FC /* PickerComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D63DB1ED2374B7CF00A111FC /* TMROPickerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TMROPickerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D63DB1F02374B7CF00A111FC /* TMROPickerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMROPickerView.h; sourceTree = "<group>"; };
 		D63DB1F12374B7CF00A111FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D63DB1F82374B90200A111FC /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
+		D63DB1FA2374B9B900A111FC /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		D63DB1FC2374BBC200A111FC /* PickerComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,8 +52,11 @@
 		D63DB1EF2374B7CF00A111FC /* TMROPickerView */ = {
 			isa = PBXGroup;
 			children = (
-				D63DB1F02374B7CF00A111FC /* TMROPickerView.h */,
+				D63DB1FA2374B9B900A111FC /* Array+Extensions.swift */,
 				D63DB1F12374B7CF00A111FC /* Info.plist */,
+				D63DB1FC2374BBC200A111FC /* PickerComponent.swift */,
+				D63DB1F82374B90200A111FC /* PickerView.swift */,
+				D63DB1F02374B7CF00A111FC /* TMROPickerView.h */,
 			);
 			path = TMROPickerView;
 			sourceTree = "<group>";
@@ -95,6 +104,7 @@
 				TargetAttributes = {
 					D63DB1EC2374B7CF00A111FC = {
 						CreatedOnToolsVersion = 11.2;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -131,6 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D63DB1F92374B90200A111FC /* PickerView.swift in Sources */,
+				D63DB1FD2374BBC200A111FC /* PickerComponent.swift in Sources */,
+				D63DB1FB2374B9B900A111FC /* Array+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +273,7 @@
 		D63DB1F62374B7CF00A111FC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7KLRW8RU62;
@@ -276,6 +290,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tomorrowideas.TMROPickerView;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +299,7 @@
 		D63DB1F72374B7CF00A111FC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7KLRW8RU62;
